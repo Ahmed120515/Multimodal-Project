@@ -5,13 +5,9 @@
 # Your andrew id: aaljabri
 #################################################
 
-
-
 from cmu_graphics import *
 import math
 import random
-
-
 
 #brazil qatar lebanon syria
 
