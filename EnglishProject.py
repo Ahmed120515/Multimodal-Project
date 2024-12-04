@@ -14,32 +14,32 @@ import random
 def onAppStart(app):
     app.enemies = []
     app.background = rgb(224, 255, 255)
-    app.poem = '/Users/ahmedaljabri/Desktop/English Project/sprites/Poems.png'  
-    app.china = '/Users/ahmedaljabri/Desktop/English Project/sprites/china.webp'
-    app.qatar = '/Users/ahmedaljabri/Desktop/English Project/sprites/qatar.png'
-    app.ethiopia = '/Users/ahmedaljabri/Desktop/English Project/sprites/ethiopia.png'
-    app.pakistan = '/Users/ahmedaljabri/Desktop/English Project/sprites/pakistan.png'
-    app.back = '/Users/ahmedaljabri/Desktop/English Project/sprites/back.webp'
-    app.home = '/Users/ahmedaljabri/Desktop/Project/Sprites/menu/houseIcon.png'
+    app.poem = r'./sprites/Poems.png'  
+    app.china = r'./sprites/china.webp'
+    app.qatar = r'./sprites/qatar.png'
+    app.ethiopia = r'./sprites/ethiopia.png'
+    app.pakistan = r'./sprites/pakistan.png'
+    app.back = r'./sprites/back.webp'
+    app.home = r'./sprites/menu/houseIcon.png'
     app.current = 0
     app.state = 'start'
     app.currentCountry = ''
-    app.backButton = '/Users/ahmedaljabri/Desktop/English Project/sprites/backButton.png'
+    app.backButton = r'./sprites/backButton.png'
     app.menu = False
-    app.rightArrow = '/Users/ahmedaljabri/Desktop/English Project/sprites/ArrowRight.png'
+    app.rightArrow = r'./sprites/ArrowRight.png'
     app.s = False
 
-    app.harry = '/Users/ahmedaljabri/Desktop/English Project/sprites/Harry.jpeg'
+    app.harry = r'./sprites/Harry.jpeg'
     app.harryVoice = Sound(r'./harryVoice.mp3')
 
-    app.jassim = '/Users/ahmedaljabri/Desktop/English Project/sprites/Jassim.jpeg'
+    app.jassim = r'./sprites/Jassim.jpeg'
     app.jassimVoice = Sound(r'./jassimVoice.mp3')
 
 
-    app.mikiyas = '/Users/ahmedaljabri/Desktop/English Project/sprites/Mikiyas.jpeg'
+    app.mikiyas = r'./sprites/Mikiyas.jpeg'
     app.mikiyasVoice = Sound(r'./mikiyasVoice.mp3')
 
-    app.aun = '/Users/ahmedaljabri/Desktop/English Project/sprites/Aun.jpeg'
+    app.aun = r'./sprites/Aun.jpeg'
     app.aunVoice = Sound(r'./aunVoice.mp3')
 
 
@@ -219,6 +219,7 @@ def qatar_redrawAll(app):
 
 def qatar_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
+        app.jassimVoice.pause()
         setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
@@ -274,6 +275,7 @@ def brazil_redrawAll(app):
 
 def brazil_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
+        app.harryVoice.pause()
         setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
@@ -328,6 +330,7 @@ def syria_redrawAll(app):
 
 def syria_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
+        app.aunVoice.pause()
         setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
@@ -383,6 +386,7 @@ def lebanon_redrawAll(app):
 
 def lebanon_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
+        app.mikiyasVoice.pause()
         setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
