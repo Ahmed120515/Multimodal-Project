@@ -219,8 +219,11 @@ def qatar_redrawAll(app):
 
 def qatar_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
-        app.jassimVoice.pause()
-        setActiveScreen('main')
+        try:
+            app.jassimVoice.pause()
+            setActiveScreen('main')
+        except:
+            setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
         if app.current == 1:
@@ -275,8 +278,11 @@ def brazil_redrawAll(app):
 
 def brazil_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
-        app.harryVoice.pause()
-        setActiveScreen('main')
+        try:
+            app.harryVoice.pause()
+            setActiveScreen('main')
+        except:
+            setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
         if app.current == 1:
@@ -330,8 +336,11 @@ def syria_redrawAll(app):
 
 def syria_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
-        app.aunVoice.pause()
-        setActiveScreen('main')
+        try:
+            app.aunVoice.pause()
+            setActiveScreen('main')
+        except:
+            setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
         if app.current == 1:
@@ -386,8 +395,11 @@ def lebanon_redrawAll(app):
 
 def lebanon_onMousePress(app, x, y):
     if 10 <= x <= 90 and 10 <= y <= 85:
-        app.mikiyasVoice.pause()
-        setActiveScreen('main')
+        try:
+            app.mikiyasVoice.pause()
+            setActiveScreen('main')
+        except:
+            setActiveScreen('main')
 
     if 50 <= x <= 750 and 455 <= y <= 490:
         if app.current == 1:
